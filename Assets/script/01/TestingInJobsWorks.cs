@@ -87,7 +87,7 @@ public class TestingInJobsWorks : MonoBehaviour {
     // o Job System usa strutct.
     // É necessário usar IJob interface
 
-    [BurstCompile]
+    [BurstCompile(CompileSynchronously = true)]
     public struct TarefaPesadaJob : IJob {
 
         public void Execute () {

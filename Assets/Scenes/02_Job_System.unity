@@ -217,8 +217,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1358924116}
   - component: {fileID: 1358924117}
-  - component: {fileID: 1358924118}
-  - component: {fileID: 1358924119}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -248,34 +246,10 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358924115}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32194231bb939a488fab999911b91bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1358924118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358924115}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b4faab71c02d8e4cbd263b9014dceb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useJobs: 0
---- !u!114 &1358924119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358924115}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d2ab89acfc400c45a7c8df51a927731, type: 3}
+  m_Script: {fileID: 11500000, guid: fa899acb13854f84a822fcc77f510a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   useJobs: 0
+  pfZombie: {fileID: 6817048845127029354, guid: 88337a67466460444b0bfb4c6f183445, type: 3}
