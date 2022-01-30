@@ -4,6 +4,7 @@ using UnityEngine;
 using Unity.Mathematics;
 using Unity.Jobs;
 using Unity.Collections;
+using Unity.Burst;
 
 
 public class TestingInJobsWorks : MonoBehaviour {
@@ -25,9 +26,9 @@ public class TestingInJobsWorks : MonoBehaviour {
             // sejam lancadas ao mesmo tempo.
             // Se não, continuaremos usando sigle Thread
 
-            NativeArray<JobHandle> jobHandlesList = new NativeArray<JobHandle> (10,Allocator.Temp);           
+            NativeArray<JobHandle> jobHandlesList = new NativeArray<JobHandle> (10,Allocator.Temp);
 
-            
+
             for (int i = 0 ; i < 10 ; i++) {
                 // Job System call
                 JobHandle jobHandle = TarefaPesadaTaskJob ();
@@ -86,6 +87,7 @@ public class TestingInJobsWorks : MonoBehaviour {
     // o Job System usa strutct.
     // É necessário usar IJob interface
 
+    [BurstCompile]
     public struct TarefaPesadaJob : IJob {
 
         public void Execute () {
